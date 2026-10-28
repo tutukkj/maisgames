@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Protótipo de catálogo gamer da Mais Games: consoles, jogos e acessórios em uma vitrine rápida e direta." />
+    <meta name="theme-color" content="#0b0b0d" />
+    <title>Mais Games — Seu próximo game começa aqui</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#catalogo">Pular para o catálogo</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Mais Games — início">
+        <span class="pixel-logo" aria-hidden="true">
+          <i class="r p-21"></i><i class="r p-12"></i><i class="r p-22"></i><i class="r p-32"></i><i class="r p-23"></i>
+          <i class="w p-42"></i><i class="w p-52"></i><i class="w p-62"></i><i class="w p-24"></i><i class="w p-44"></i>
+          <i class="w p-54"></i><i class="w p-64"></i><i class="w p-25"></i><i class="w p-65"></i><i class="w p-36"></i>
+          <i class="w p-46"></i><i class="w p-56"></i>
+        </span>
+        <span class="brand-wordmark">MAIS <b>GAMES</b></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navegação principal" data-nav>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#vantagens">A loja</a>
+      </nav>
+
+      <a class="header-cta" href="https://wa.me/5511968950657?text=Oi%2C%20Mais%20Games!%20Quero%20conhecer%20o%20cat%C3%A1logo." target="_blank" rel="noreferrer">
+        Falar no WhatsApp <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Catálogo Mais Games</p>
+          <h1>Seu próximo<br /><em>game</em> começa<br />aqui.</h1>
+          <p class="hero-lede">Consoles, jogos e acessórios em uma vitrine feita para quem leva diversão a sério.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#catalogo">Explorar catálogo <span aria-hidden="true">↓</span></a>
+            <a class="button button-ghost" href="#vantagens">Conhecer a loja</a>
+          </div>
+          <div class="hero-proof" aria-label="Categorias disponíveis">
+            <div><strong>03</strong><span>universos<br />para explorar</span></div>
+            <div class="proof-tags"><span>PlayStation</span><span>Xbox</span><span>Nintendo</span></div>
+          </div>
+        </div>
+
+        <div class="hero-stage reveal reveal-delay" aria-label="Ilustração de controle PlayStation 4">
+          <div class="stage-badge">PLAYER 01</div>
+          <div class="crosshair crosshair-a" aria-hidden="true">+</div>
+          <div class="crosshair crosshair-b" aria-hidden="true">+</div>
+          <div class="controller-wrap" aria-hidden="true">
+            <img class="controller-image" src="./images-removebg-preview.png" alt="" />
+          </div>
+          <div class="stage-copy"><span>POWER UP</span><strong>+</strong></div>
+          <div class="pixel-trail" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-label="Destaques da loja">
+        <div class="ticker-track">
+          <span>CONSOLES</span><i>✦</i><span>JOGOS</span><i>✦</i><span>ACESSÓRIOS</span><i>✦</i><span>ATENDIMENTO DIRETO</span><i>✦</i>
+          <span aria-hidden="true">CONSOLES</span><i aria-hidden="true">✦</i><span aria-hidden="true">JOGOS</span><i aria-hidden="true">✦</i><span aria-hidden="true">ACESSÓRIOS</span><i aria-hidden="true">✦</i><span aria-hidden="true">ATENDIMENTO DIRETO</span><i aria-hidden="true">✦</i>
+        </div>
+      </div>
+
+      <section class="category-section section-shell" id="categorias">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow dark"><span></span> Escolha seu universo</p>
+            <h2>Jogue do<br /><em>seu jeito.</em></h2>
+          </div>
+          <p>Do console da sala ao setup completo, encontre a categoria que combina com a sua próxima missão.</p>
+        </div>
+        <div class="category-grid">
+          <button class="category-card cat-playstation reveal" type="button" data-quick-filter="playstation">
+            <span class="category-index">01</span><span class="category-arrow">↗</span>
+            <strong>PLAY<br />STATION</strong><small>Consoles, jogos e controles</small>
+            <span class="category-symbol">△ ○ × □</span>
+          </button>
+          <button class="category-card cat-xbox reveal reveal-delay" type="button" data-quick-filter="xbox">
+            <span class="category-index">02</span><span class="category-arrow">↗</span>
+            <strong>XBOX</strong><small>Potência para todos os estilos</small>
+            <span class="category-symbol">X</span>
+          </button>
+          <button class="category-card cat-nintendo reveal" type="button" data-quick-filter="nintendo">
+            <span class="category-index">03</span><span class="category-arrow">↗</span>
+            <strong>NIN<br />TENDO</strong><small>Diversão em qualquer lugar</small>
+            <span class="category-symbol joycon-symbol"><i></i><i></i></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalogo">
+        <div class="section-shell">
+          <div class="catalog-top reveal">
+            <div>
+              <p class="eyebrow"><span></span> Seleção em destaque</p>
+              <h2>PRONTO PARA<br /><em>O PRÓXIMO NÍVEL?</em></h2>
+            </div>
+            <p class="catalog-note">Itens e valores ilustrativos para validação do protótipo.</p>
+          </div>
+
+          <div class="catalog-toolbar" role="search">
+            <label class="search-box">
+              <span class="sr-only">Buscar produto</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+              <input type="search" placeholder="Buscar console, jogo ou acessório" data-search />
+              <kbd>⌘ K</kbd>
+            </label>
+            <div class="filter-group" aria-label="Filtrar por categoria" data-filters>
+              <button class="filter-chip is-active" type="button" data-filter="todos">Todos</button>
+              <button class="filter-chip" type="button" data-filter="console">Consoles</button>
+              <button class="filter-chip" type="button" data-filter="jogo">Jogos</button>
+              <button class="filter-chip" type="button" data-filter="acessorio">Acessórios</button>
+            </div>
+          </div>
+
+          <div class="results-line"><span data-count>6 itens</span><span>Conteúdo demonstrativo</span></div>
+          <div class="product-grid" data-product-grid></div>
+          <div class="empty-state" hidden data-empty>
+            <span>?</span><h3>Nenhum item encontrado.</h3><p>Tente outra palavra ou limpe os filtros.</p>
+            <button class="button button-primary" type="button" data-clear>Limpar busca</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="value-section section-shell" id="vantagens">
+        <div class="value-intro reveal">
+          <p class="eyebrow dark"><span></span> Mais do que uma vitrine</p>
+          <h2>DA SUA DÚVIDA<br /><em>ATÉ O START.</em></h2>
+        </div>
+        <div class="value-list">
+          <article class="value-item reveal"><span>01</span><div><h3>Explore sem complicação</h3><p>Busque por nome, filtre por categoria e encontre o que combina com seu setup.</p></div><b>+</b></article>
+          <article class="value-item reveal"><span>02</span><div><h3>Fale com uma pessoa</h3><p>Gostou de algo? Leve a conversa para o WhatsApp e confirme os detalhes diretamente.</p></div><b>+</b></article>
+          <article class="value-item reveal"><span>03</span><div><h3>Do console ao acessório</h3><p>Uma vitrine única para descobrir diferentes plataformas, jogos e complementos.</p></div><b>+</b></article>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="cta-pixels" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p class="eyebrow"><span></span> Sua próxima partida</p>
+        <h2>APERTE O <em>START.</em></h2>
+        <p>Chame a Mais Games e descubra o que pode entrar no seu setup.</p>
+        <a class="button button-light" href="https://wa.me/5511968950657?text=Oi%2C%20Mais%20Games!%20Vi%20o%20cat%C3%A1logo%20e%20quero%20saber%20mais." target="_blank" rel="noreferrer">Conversar no WhatsApp <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio" aria-label="Mais Games — voltar ao início">
+        <span class="pixel-logo mini" aria-hidden="true"><i class="r p-21"></i><i class="r p-12"></i><i class="r p-22"></i><i class="r p-32"></i><i class="r p-23"></i><i class="w p-42"></i><i class="w p-52"></i><i class="w p-62"></i><i class="w p-24"></i><i class="w p-44"></i><i class="w p-54"></i><i class="w p-64"></i><i class="w p-25"></i><i class="w p-65"></i><i class="w p-36"></i><i class="w p-46"></i><i class="w p-56"></i></span>
+        <span class="brand-wordmark">MAIS <b>GAMES</b></span>
+      </a>
+      <p>Protótipo visual — produtos, preços e disponibilidade são ilustrativos.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </footer>
+
+    <dialog class="product-dialog" data-dialog aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Fechar detalhes" data-dialog-close>×</button>
+      <div class="dialog-art" data-dialog-art></div>
+      <div class="dialog-content">
+        <p class="eyebrow dark"><span></span> Detalhes do item</p>
+        <span class="dialog-brand" data-dialog-brand></span>
+        <h2 id="dialog-title" data-dialog-title></h2>
+        <p data-dialog-description></p>
+        <ul data-dialog-features></ul>
+        <div class="dialog-buy"><div><small>Valor ilustrativo</small><strong data-dialog-price></strong></div><a class="button button-primary" data-dialog-whatsapp target="_blank" rel="noreferrer">Consultar no WhatsApp ↗</a></div>
+      </div>
+    </dialog>
+  </body>
+</html>
